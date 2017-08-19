@@ -1,0 +1,65 @@
+<!doctype html>
+<html ng-app="project">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta viewport="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/jesus.png" type="image/x-icon">
+    <title>Jagan Matha Church</title>
+    <link rel="stylesheet" href="libs/bootstrap.min.css"/>
+    <script src="libs/jquery.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-route.min.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="container bdr">
+        <div class="row">
+            <div class="col-xs-3 col-sm-2 col-md-1 hdr-img">
+                <img src="images/jesus.png" class="img-responsive" alt="JaganMatha Church"  height="100" width="100"/>
+            </div>
+            <div class="col-xs-9 col-sm-8 col-md-8 hdr-title">
+                <i>Jagan Matha Church</i>
+            </div>
+            <div class="hidden-xs col-sm-2 col-md-3 hdr-sub-title">
+                hedjffd dkfjjdkfj 
+            </div>
+        </div>
+    </div>
+    <div class="container bdr">
+        <nav class="navbar navbar-default nav-content">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a class="navbar-brand" href="#/home">Jagan Matha Church</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="#/about">About Us</a></li>
+                <li><a href="#/out-parish">Our Parish</a></li>
+                <li><a href="#/service">Services</a></li>
+                <li><a href="#/associations">Associations</a></li>
+                <li><a href="#/news-event">New & Events</a></li>
+                  <li><a href="#/gallery">Gallery</a></li>
+                <li><a href="#/contact">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </div>
+    <div class="container bdr">
+        <div ng-view></div>
+    </div>
+    <footer class="footer bdr">
+      <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </footer>
+  </body>
+</html>

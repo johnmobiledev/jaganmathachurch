@@ -1,0 +1,138 @@
+
+
+<div class="container-fluid main-container bdr">
+        <div class="row">
+            <div class="col-xs-12 col-sm-9 col-md-9 hm-left-content thumbnail">
+            
+                <div id="myCarousel" class="carousel slide bdr" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="images/img1.jpg" >
+                        <!--
+                          <div class="carousel-caption">
+
+                            <h3>Church</h3>
+                            <p>Jagan Matha Church!</p>
+
+                          </div>
+                         -->
+                    </div>
+
+                    <div class="item">
+                      <img src="images/img3.jpg" >
+                    </div>
+
+                    <div class="item">
+                      <img src="images/img1.jpg"  >
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 bdr hm-right-content ">
+                <div class="row pr0">
+                    <div class="col-xs-12 bdr header-title">
+                        Mass Timings
+                    </div>
+                </div>
+                <div class="row mass-timings pr0" ng-class-odd="'odd'" ng-class-even="'even'" ng-repeat="mass in dailaymasses">
+                    <div class="col-xs-4 ">{{mass.day}}</div>
+                    <div class="col-xs-8">{{mass.time}}</div>
+                </div>
+                
+            </div>
+    </div>
+    
+    <div class="row paddingT15">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="images/img3.jpg">
+            <img src="images/img3.jpg" alt="Lights" style="width:100%">
+            <div class="caption">
+              <p>Lorem ipsum...</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="images/img2.png">
+            <img src="images/img2.png" alt="Nature" style="width:100%">
+            <div class="caption">
+              <p>Lorem ipsum...</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="images/img1.png">
+            <img src="images/img1.jpg" alt="Fjords" style="width:100%">
+            <div class="caption">
+              <p>Lorem ipsum...</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+            Collapsible Group 1</a>
+          </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse in">
+          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+            Collapsible Group 2</a>
+          </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+            Collapsible Group 3</a>
+          </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+</div>
+
+
+
+
