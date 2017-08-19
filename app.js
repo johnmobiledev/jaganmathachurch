@@ -11,9 +11,29 @@ angular.module('project', ['ngRoute'])
       controller:'AboutController',
       templateUrl:'pages/about.html'
     })
+    .when('/associations', {
+      controller:'AssocitaionController',
+      templateUrl:'pages/associations.html'
+    })
     .when('/contact', {
-      controller:'ContacttController',
+      controller:'ContactController',
       templateUrl:'pages/contact.html'
+    })
+    .when('/gallery', {
+      controller:'GallerytController',
+      templateUrl:'pages/gallery.html'
+    })
+    .when('/news-events', {
+      controller:'NewsEventsController',
+      templateUrl:'pages/news-events.html'
+    })
+    .when('/our-parish', {
+      controller:'OurPerishController',
+      templateUrl:'pages/our-parish.html'
+    })
+    .when('/services', {
+      controller:'ServicesController',
+      templateUrl:'pages/services.html'
     })
     .otherwise({
       redirectTo:'/'
@@ -33,6 +53,26 @@ angular.module('project', ['ngRoute'])
     $scope.message ="AboutController";
 })
  
-.controller('ContacttController',function($scope) {
+.controller('AssocitaionController',function($scope) {
+     $scope.message ="AssocitaionController";
+})
+
+.controller('GallerytController', function($scope) {
+    $scope.message ="GallerytController";
+})
+ 
+.controller('ContactController',function($scope) {
      $scope.message ="ContacttController";
-});
+})
+
+.controller('NewsEventsController', function($scope) {
+    $scope.message ="NewsEventsController";
+})
+ 
+.controller('OurPerishController',function($scope) {
+     $scope.message ="OurPerishController";
+})
+
+.controller('ServicesController',function($scope) {
+     $scope.message ="ServicesController";
+})
